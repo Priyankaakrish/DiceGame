@@ -1,40 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>🎲 Dice Game</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <title>🎲 Dicee</title>
 </head>
-
 <body>
+    <div class="container">
+        <h1>Hit Go!</h1>
 
-  <div class="container">
-    <h1>Roll the Dice</h1>
-
-    <div class="dice">
-      <p>Player 1</p>
-      <img class="img1" src="Images/dice6.png">
+        <div class="dice">
+            <p>Player 1</p>
+            <img src="images/dice1.svg">
+        </div>
+        <div class="dice">
+            <p>Player 2</p>
+            <img src="images/dice1.svg">
+        </div>
     </div>
-
-    <div class="dice">
-      <p>Player 2</p>
-      <img class="img2" src="Images/dice6.png">
-    </div>
-
-    <div class="button">
-      <button class="btn">Roll the Dice</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <button class="btn" onclick="shuffle()">Go!</button>
 </body>
-
 <footer>
-  <p>Made by Priyanka K</p>
+    <a href="https://github.com/PRIYANKA K">🎲 by Priyanka 🎲</a>
 </footer>
-
+<script src="index.js" charset="utf-8"></script>
 </html>
