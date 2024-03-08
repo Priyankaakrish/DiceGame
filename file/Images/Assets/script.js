@@ -1,28 +1,29 @@
-// Roll the dice button
-var button = document.querySelector(".btn");
-button.addEventListener("click", start);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <title>🎲 Dicee</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hit Go!</h1>
 
-function start() {
-  // First Dice
-  var randomNumber1 = (Math.floor(Math.random() * 6) + 1); // 1-6
-  document.querySelector(".img1").setAttribute("src", "images/dice" + randomNumber1 + ".png"); // dice1.png - dice6.png
-
-  // Second Dice
-  var randomNumber2 = (Math.floor(Math.random() * 6) + 1); // 1-6
-  document.querySelector(".img2").setAttribute("src", "images/dice" + randomNumber2 + ".png");
-
-  // Results
-  // player 1 wins
-  if (randomNumber1 > randomNumber2) {
-    document.querySelector("h1").innerHTML = "&#128681; Player 1 Wins!";
-  }
-  // player 2 wins
-  else if (randomNumber1 < randomNumber2) {
-    document.querySelector("h1").innerHTML = "Player 2 Wins! &#128681;";
-  }
-  // draw 
-  else {
-    document.querySelector("h1").innerHTML = "Draw!";
-  }
-
-}
+        <div class="dice">
+            <p>Player 1</p>
+            <img src="images/dice1.svg">
+        </div>
+        <div class="dice">
+            <p>Player 2</p>
+            <img src="images/dice1.svg">
+        </div>
+    </div>
+    <button class="btn" onclick="shuffle()">Go!</button>
+</body>
+<footer>
+    <a href="https://github.com/DH4NRAJ">🎲 by Dhanraj 🎲</a>
+</footer>
+<script src="index.js" charset="utf-8"></script>
+</html>
